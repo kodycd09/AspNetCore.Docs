@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -8,8 +8,8 @@ builder.Services.AddPortableObjectLocalization();
 
 builder.Services
     .Configure<RequestLocalizationOptions>(options => options
-        .AddSupportedCultures("fr", "cs")
-        .AddSupportedUICultures("fr", "cs"));
+        .AddSupportedCultures("fr", "cs", "es")
+        .AddSupportedUICultures("fr", "cs", "es"));
 
 builder.Services
     .AddRazorPages()
